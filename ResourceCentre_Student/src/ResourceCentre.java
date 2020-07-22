@@ -20,7 +20,6 @@ public class ResourceCentre {
 			option = Helper.readInt("Enter an option > ");
 
 			if (option == 1) {
-				// View all items
 				ResourceCentre.viewAllCamcorder(camcorderList);
 				ResourceCentre.viewAllChromebook(chromebookList);
 
@@ -67,7 +66,7 @@ public class ResourceCentre {
 				}
 
 			} else if (option == 4) {
-				// Return item
+
 				ResourceCentre.setHeader("RETURN");				
 				ResourceCentre.setHeader("ITEM TYPES");
 				System.out.println("1. Camcorder");
@@ -144,7 +143,6 @@ public class ResourceCentre {
 	}
 
 	public static String retrieveAllChromebook(ArrayList<Chromebook> chromebookList) {
-		//yolo
 		String output = "";
 		for (int i = 0; i < chromebookList.size(); i++) {
 			output += String.format("%-10s %-30s %-10s %-10s %-20s\n",
