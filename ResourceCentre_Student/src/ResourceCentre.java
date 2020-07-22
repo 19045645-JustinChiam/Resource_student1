@@ -102,7 +102,7 @@ public class ResourceCentre {
 		System.out.println("4. Return item");
 		System.out.println("5. Quit");
 		Helper.line(80, "-");
-
+//test
 	}
 	
 	public static void setHeader(String header) {
@@ -177,17 +177,27 @@ public class ResourceCentre {
 	public static void addCamcorder(ArrayList<Camcorder> camcorderList, Camcorder cc) {
 		
 		camcorderList.add(cc);
+		
 		System.out.println("Camcorder added");
 	}
 	
-	public static Chromebook inputChromebook() {	
-		Chromebook cb =null;
+	public static Chromebook inputChromebook() {
+		// hiiiiii
+		//Chromebook cb =null;
+		String tag = Helper.readString("Enter asset tag > ");
+		String description = Helper.readString("Enter description > ");
+		String os = Helper.readString("Enter os >");
+
+		Chromebook cb = new Chromebook(tag, description, os);
+		
 		// write your code here
 		return cb;
 		
 	}	
 	public static void addChromebook(ArrayList<Chromebook> chromebookList, Chromebook cb) {
 		// write your code here
+		chromebookList.add(cb);
+		System.out.println("Chromebook added");
 	}
 	
 	//================================= Option 3 Loan =================================
