@@ -118,7 +118,7 @@ public class ResourceCentreTest {
 	public void doLoanCamcorderTest() {
 		//fail("Not yet implemented");
 		// write your code here
-		
+		//test
 	}
 	
 	@Test
