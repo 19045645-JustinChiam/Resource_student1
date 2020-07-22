@@ -119,10 +119,12 @@ public class ResourceCentreTest {
 	@Test
 	public void doReturnChromebookTest() {
 		// Normal Condition
-		// When user enters the Asset tagNumber CB0011 to return the chromebook which was loan the system will update the table in which setIsAvailable is true.
 		chromebookList.get(0).setIsAvailable(false);
 		ResourceCentre.doReturnChromebook(chromebookList, "CB0011");
 		ResourceCentre.returnChromeBook(chromebookList);
+		assertTrue("When user enters the Asset tagNumber CB0011 to return the chromebook which "
+				+ "was loan the system will update the table in which setIsAvailable is true and the due date will be an empty string "
+				+ "and display the message Chromebook CB0011 Updated.", true);
 		
 		
 		
@@ -132,6 +134,7 @@ public class ResourceCentreTest {
 		//the system will display “Invalid asset tag” and returns to the main menu page.
 		ResourceCentre.doReturnChromebook(chromebookList, "CB00567");
 		ResourceCentre.returnChromeBook(chromebookList);
+
 		
 		
 		//Boundary Condition
