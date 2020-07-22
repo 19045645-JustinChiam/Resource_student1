@@ -144,7 +144,6 @@ public class ResourceCentre {
 	}
 
 	public static String retrieveAllChromebook(ArrayList<Chromebook> chromebookList) {
-		//yolo
 		String output = "";
 		for (int i = 0; i < chromebookList.size(); i++) {
 			output += String.format("%-10s %-30s %-10s %-10s %-20s\n",
