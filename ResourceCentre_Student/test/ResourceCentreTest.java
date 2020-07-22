@@ -147,10 +147,12 @@ public class ResourceCentreTest {
 		
 		
 		// Error Condition
-		//When the user enters the Asset Tagnumber CB00567 to return the chromebook, 
-		//the system will display “Invalid asset tag” and returns to the main menu page.
+
 		ResourceCentre.doReturnChromebook(chromebookList, "CB00567");
 		ResourceCentre.returnChromeBook(chromebookList);
+		assertFalse("When the user enters the Asset Tagnumber CB00567 to return the chromebook," + 
+				"the system will display “Invalid asset tag” and returns to the main menu page.", false);
+		
 
 		
 		
@@ -160,6 +162,8 @@ public class ResourceCentreTest {
 		chromebookList.get(0).setIsAvailable(true);
 		ResourceCentre.doReturnChromebook(chromebookList, "CB0011");
 		ResourceCentre.returnChromeBook(chromebookList);
+		assertFalse("When user enters the Asset tagnumber CB0011 to return the chromebook which was not loaned made" + 
+				"available the system will display “Invalid asset tag.", false);
 		
 
 		
