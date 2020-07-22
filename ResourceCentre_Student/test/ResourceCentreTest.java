@@ -135,7 +135,7 @@ public class ResourceCentreTest {
 	}
 	@Test
 	public void doReturnChromebookTest() {
-		// Normal Condition
+		// Normal Condition hi
 		chromebookList.get(0).setIsAvailable(false);
 		ResourceCentre.doReturnChromebook(chromebookList, "CB0011");
 		ResourceCentre.returnChromeBook(chromebookList);
