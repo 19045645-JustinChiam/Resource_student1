@@ -127,6 +127,7 @@ public class ResourceCentreTest {
 		chromebookList.get(0).setIsAvailable(true);
 		ResourceCentre.doReturnChromebook(chromebookList, "CB0011");
 		ResourceCentre.returnChromeBook(chromebookList);
+		
 
 		
 		
