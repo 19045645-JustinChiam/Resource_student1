@@ -66,7 +66,7 @@ public class ResourceCentre {
 				}
 
 			} else if (option == 4) {
-				// Return item
+
 				ResourceCentre.setHeader("RETURN");				
 				ResourceCentre.setHeader("ITEM TYPES");
 				System.out.println("1. Camcorder");
